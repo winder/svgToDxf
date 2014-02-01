@@ -1,0 +1,17 @@
+Purpose:
+This script simply runs a command with Inkscape to convert a file from svg to
+eps, and then runs another command with pstoedit to convert it from eps to
+dxf.
+
+Requirements:
+* Inkscape
+* pstoedit
+
+You will need to make sure both of these programs are accessible from the
+command line, meaning you can run "inkscape --usage" or "pstoedit -help" and
+get a list of command options.
+
+On most linux distributions you should be able to use apt
+or similar to install the packages, on MacOSX you may need to use something
+like ports to install pstoedit then manually add the PATH options in your 
+startup script (.bashrc or similar).
