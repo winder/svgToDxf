@@ -43,8 +43,8 @@ function svgToEps()
 
   epsfile="${1%.*}.eps"
 
-  echo "inkscape -f '$1' -E '$epsfile'"
-  inkscape -f "$1" -E "$epsfile" >/dev/null 2>&1
+  echo "inkscape --export-ps-level=3 -o \"$epsfile\" \"$1\" >/dev/null 2>&1"
+  inkscape --export-ps-level=3 -o "$epsfile" "$1" >/dev/null 2>&1
 }
 
 function svgToDxf()
