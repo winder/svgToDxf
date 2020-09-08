@@ -15,3 +15,7 @@ On most linux distributions you should be able to use apt
 or similar to install the packages, on MacOSX you may need to use something
 like ports to install pstoedit then manually add the PATH options in your 
 startup script (.bashrc or similar).
+
+Also included is a gmake makefile that you can throw into a directory full
+of svgs and just type "make" to convert all of the changed ones to DXF.  The
+makefile has the same requirements as the script.
